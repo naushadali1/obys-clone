@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: "Plain Light";
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+#loader{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: #0b0b0b;
+    z-index: 999;
+    padding: 25vh 10vw;
+}
+
+.line {
+    height: fit-content;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.5vw;
+}
+
+.line h1 {
+    font-size: 6.5vw;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.line h2 {
+    font-size: 5vw;
+    text-transform: uppercase;
+    font-weight: 500;
+    opacity: 0;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes anime {
+    0%{
+        font-family: "plain light";
+        opacity: 1;
+        -webkit-text-stroke: 0.1px white;
+        color: white;
+    }
+    48%{
+        font-family: "plain light";
+        opacity: 0;
+        -webkit-text-stroke: 0.1px white;
+        color: white;
+
+
+    }
+    50%{
+        font-family: "silk serif";
+        opacity:1;
+        -webkit-text-stroke: 0.1px rgb(247, 247, 247);
+        color: transparent;
+
+    }
+    100%{
+        font-family: "silk serif";
+        opacity: 0;
+        -webkit-text-stroke: 0.1px rgb(255, 255, 255);
+        color: transparent;
+    }
+}
+#line1-part1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .6vw;
+}
+
+#line1-part1 h5 , #line1-part1 h6{
+    font-size: 2vw;
+font-family: "silk serif";
+font-weight: 100;
+}
+
+#line1-part1 h5{
+    width: 5vw;
+text-align: right;
+
+}
+
+main{
+position: relative;
+background-color: #151515;
+}
+
+#page1 {
+    height: 100vh;
+    width: 100vw;
+    background-color: #151515;
+}
